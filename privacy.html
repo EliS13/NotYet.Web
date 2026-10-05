@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not yet. Privacy policy</title>
+<meta name="description" content="What the Not yet. Chrome extension does with your information: it keeps everything in your own browser.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="images/icon.png">
+<link rel="stylesheet" href="site.css">
+<style>
+  .head { padding: 64px 0 34px; }
+  .head h1 { margin: 0 0 12px; font: 800 clamp(42px, 6vw, 68px)/1.04 var(--display); letter-spacing: -.035em; }
+  .updated { margin: 0 0 18px; color: var(--ink-2); font-size: 15px; }
+  .head .lede { max-width: 40em; margin: 0; font-size: 19px; color: var(--ink-2); }
+
+  /* The short version */
+  .short { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 0 0 40px; padding: 0; list-style: none; }
+  .short li { padding: 18px 20px; border-radius: 16px; background: var(--paper); border: 1px solid var(--line); font-size: 15.5px; color: var(--ink-2); }
+  .short b { display: block; margin-bottom: 4px; font: 700 17px/1.3 var(--display); color: var(--ink); }
+  .short li::before { content: ''; display: block; width: 26px; height: 6px; margin-bottom: 12px; border-radius: 99px; background: var(--c); }
+
+  /* The policy: a list of its parts beside it on a wide screen */
+  .layout { display: grid; grid-template-columns: 220px 1fr; gap: 40px; align-items: start; padding-bottom: 72px; }
+  .toc { position: sticky; top: calc(var(--bar) + 24px); }
+  .toc p { margin: 0 0 10px; font: 700 13px/1 var(--text); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+  .toc ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; }
+  .toc a { display: block; padding: 7px 12px; border-radius: 10px; text-decoration: none; font-size: 15px; color: var(--ink-2); }
+  .toc a:hover { background: var(--paper); color: var(--ink); }
+  .policy { padding: 40px 48px 32px; border-radius: 22px; background: var(--paper); border: 1px solid var(--line); }
+  .policy section + section { margin-top: 30px; padding-top: 28px; border-top: 1px solid var(--line); }
+  .policy h2 { margin: 0 0 10px; font: 750 23px/1.25 var(--display); letter-spacing: -.015em; }
+  .policy p { margin: 0 0 12px; max-width: 68ch; line-height: 1.7; }
+  .policy p:last-child { margin-bottom: 0; }
+  .policy a { color: var(--link); text-underline-offset: 3px; }
+  .policy .note { margin: 28px 0 0; padding-top: 18px; border-top: 1px solid var(--line); color: var(--ink-2); font-size: 15px; }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .toc { display: none; }
+    .short { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .head { padding: 40px 0 26px; }
+    .head .lede { font-size: 17px; }
+    .policy { padding: 26px 20px 22px; border-radius: 18px; }
+    .policy h2 { font-size: 21px; }
+  }
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="images/icon.png" alt="">Not yet.</a>
+    <nav aria-label="Site">
+      <a href="./#features">Features</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a class="btn primary sm" href="https://chromewebstore.google.com/detail/not-yet-tasks-first-video/hkajcmaaoajbdafiddahklcnohbkmdmd">Get it for Chrome</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="head">
+    <p class="eyebrow">Not yet.</p>
+    <h1><span class="swipe">Privacy</span> policy</h1>
+    <p class="updated">Last updated: October 1, 2026</p>
+    <p class="lede">This covers the Chrome extension Not yet. It keeps YouTube and any other sites you choose closed until your list is done, closes them at bedtime, and keeps your calendar next to your homework. Here is everything it does with your information.</p>
+  </div>
+
+  <ul class="short" aria-label="The short version">
+    <li style="--c:#9d86ee"><b>Stays in your browser</b>Habits, tasks, notes and settings are saved in Chrome, on your computer.</li>
+    <li style="--c:#5fbf92"><b>Google is optional</b>If you sign in, your calendars and tasks go only between your browser and Google.</li>
+    <li style="--c:#f0976c"><b>Nothing to the developer</b>No analytics, ads or trackers, and no servers of the developer's.</li>
+  </ul>
+
+  <div class="layout">
+    <nav class="toc" aria-label="On this page">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#stores">What it stores</a></li>
+        <li><a href="#fetches">What it fetches</a></li>
+        <li><a href="#google">If you sign in with Google</a></li>
+        <li><a href="#apps">If you connect other apps</a></li>
+        <li><a href="#sites">On the sites it closes</a></li>
+        <li><a href="#deleting">Deleting your data</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <article class="policy">
+      <section id="stores">
+        <h2>What it stores</h2>
+        <p>Your habits, tasks, events you add, sticky notes, timer history and settings. All of it is saved in your own browser using Chrome's extension storage. Unless you sign in with Google (below), none of it leaves your computer, and nobody else can see it, including the developer.</p>
+      </section>
+
+      <section id="fetches">
+        <h2>What it fetches</h2>
+        <p>If you add a calendar's secret link, the extension downloads that calendar directly from your calendar provider (for example Google Calendar, Outlook or iCloud) so it can show your events and turn tagged ones into tasks. The links you paste in are stored only in your browser. It asks for permission to read each link's site when you add it.</p>
+        <p>Apart from that and Google Calendar (below), nothing is fetched. There are no analytics, ads or trackers, and no servers of the developer's.</p>
+        <p>Focus sounds, if you turn them on, are made on your computer while a task timer runs. Nothing is downloaded, recorded or sent.</p>
+      </section>
+
+      <section id="google">
+        <h2>If you sign in with Google</h2>
+        <p>Signing in is optional. If you do, the extension talks to Google Calendar directly from your browser, with the permissions you approve on Google's sign-in screen: seeing your list of calendars, and seeing, adding, changing and deleting events. It uses them only to show your events here and to save the events you add or change here. Your calendar goes only between your browser and Google; it never goes to the developer or anyone else. The pass Google gives the extension for this is kept in memory only and is gone when you close the browser.</p>
+        <p>To stop, choose Remove next to the account in Settings → Connections → Google, or remove Not yet. from the third-party connections in your Google Account.</p>
+        <p>Not yet.'s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      </section>
+
+      <section id="apps">
+        <h2>If you connect other apps</h2>
+        <p>Connections are optional. If you connect Todoist, Google Tasks, Microsoft To Do or Canvas, the extension reads your unfinished tasks that have a due date straight from that app, and tells the app when you tick or untick one of them here. It uses them only to show those tasks in your list. They go only between your browser and that app; they never go to the developer or anyone else. The token or sign-in that lets it do this stays in your browser, and Settings → Connections → Disconnect removes it (for Google, Remove next to the account). Google Tasks comes with your Google sign-in: Google's screen asks for it together with your calendars, and you can leave it unticked.</p>
+      </section>
+
+      <section id="sites">
+        <h2>What it does on the sites it closes</h2>
+        <p>On YouTube, and on any other site you switch on, the extension checks the address of the page you're on so it can show the lock screen or close the site at bedtime. On YouTube it also reads the length of the video you start on a school night. It asks Chrome for access to each extra site only when you switch that site on. It doesn't record or send your browsing or viewing history anywhere.</p>
+      </section>
+
+      <section id="deleting">
+        <h2>Deleting your data</h2>
+        <p>Settings → Backup → Delete everything erases everything saved in the extension. Removing the extension from Chrome does the same. Removing a Google account in Settings → Connections → Google ends the extension's access to it; events in your Google Calendar stay there.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Questions: <a href="mailto:fll.eli.s1234@gmail.com">fll.eli.s1234@gmail.com</a></p>
+      </section>
+      <p class="note">Not yet. is a Chrome extension (<a href="./">about it</a>). This page is its privacy policy and nothing else.</p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>Not yet. · Tasks first, videos later.</span>
+    <a href="./">Home</a>
+    <a href="mailto:fll.eli.s1234@gmail.com">fll.eli.s1234@gmail.com</a>
+  </div>
+</footer>
+</body>
+</html>
